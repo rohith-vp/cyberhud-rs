@@ -1,0 +1,15 @@
+[package]
+name = "cyberhud-rs"
+version = "0.1.0"
+edition = "2021"
+description = "Native Wayland HUD wallpaper with live system telemetry"
+
+[dependencies]
+smithay-client-toolkit = "0.18"
+fontdue = "0.8"
+rustfft = "6"
+libpulse-binding = "2.28"
+libpulse-simple-binding = "2.28"
+mpris = "2"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+libc = "0.2"

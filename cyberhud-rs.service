@@ -1,0 +1,14 @@
+[Unit]
+Description=CyberHUD native wallpaper (Wayland layer-shell)
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/.local/bin/cyberhud-rs
+Restart=on-failure
+Nice=10
+MemoryMax=150M
+CPUQuota=25%
+
+[Install]
+WantedBy=graphical-session.target
